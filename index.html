@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitPulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="logo"><img src="./fit.jpeg" alt="fit" style="width: 50px; height: 40px;"> FitPulse</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#trainers">Trainer</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Exercise.html">Exercise</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Your Fitness, Our Passion</h2>
+    <p style="width: 600px; margin-left: 450px;">Join FitPulse and kickstart your fitness journey today!,FitPulse helps
+      you stay on track with your health and fitness goals. Whether you're a beginner or a fitness pro, our platform
+      offers tools to plan, track, and analyze your workouts with ease.</p>
+    <button><a href="register.html">Join Now</a> </button>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Why Choose FitPulse?</h2>
+    <div class="feature-container">
+      <div class="feature-card">
+        <img src="./personal.jpeg" alt="personal" style="width: 65px; border-radius: 2px;">
+        <h3 onclick="Personal()">Personal Trainers</h3>
+        <p>Get trained by certified fitness experts.</p>
+      </div>
+      <div class="feature-card">
+        <img src="./workoouticon.jpeg" alt="personal" style="width: 70px; border-radius: 2px;">
+        <h3 onclick="Workout()">Workout Plans</h3>
+        <p>Customized workout plans for all levels.</p>
+      </div>
+      <div class="feature-card">
+        <img src="./Neutition.jpeg" alt="personal" style="width: 70px; border-radius: 2px;">
+        <h3 onclick="Nutrition()">Nutrition Guides</h3>
+        <p>Healthy meal plans tailored to your goals.</p>
+      </div>
+    </div>
+    <div class="feature-container">
+      <div class="feature-card">
+        <img src="./fitness.jpg" alt="personal" style="width: 70px; border-radius: 2px;">
+        <h3>Fitness Tracking</h3>
+        <p>Track your workouts, calories, and progress with interactive graphs.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="./live.png" alt="personal" style="width: 70px; border-radius: 2px;">
+        <h3>Live Virtual Classes</h3>
+        <p>Join real-time fitness sessions with professional trainers from anywhere.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="./AI.jpeg" alt="personal" style="width: 70px; border-radius: 2px;">
+        <h3>AI Workout Suggestions</h3>
+        <p>Get smart AI-generated workout plans based on your fitness goals and data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="trainers" class="trainers-section animate">
+    <h2 style="margin-top: 30px; font-size: 60px; color: white;">Meet Our Trainers</h2>
+    <div class="trainers-container">
+      <div class="trainer-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Trainer John" />
+        <h4>John Smith</h4>
+        <p>Certified Strength Coach</p>
+      </div>
+      <div class="trainer-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Trainer Emma" />
+        <h4>Emma Brown</h4>
+        <p>Yoga & Wellness Expert</p>
+      </div>
+      <div class="trainer-card">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Trainer Mike" />
+        <h4>Mike Johnson</h4>
+        <p>HIIT Specialist</p>
+      </div>
+    </div>
+    <p style="margin-top: 30px; color: white; text-align: center; padding: 20px;">At FitPulse, our certified personal trainers are more than just fitness experts — they’re passionate mentors dedicated to helping you achieve your health goals. With years of industry experience, each trainer brings personalized attention, motivation, and scientifically backed workout techniques tailored to your body type and fitness level. Whether you're a beginner or an athlete, our trainers ensure you train safely, progress steadily, and stay motivated. They’re here to support you both in-person and virtually, making fitness flexible and accessible for everyone.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 style="font-size: 50px;">Contact Us</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FitPulse. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

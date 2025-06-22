@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="exerbody">
+     <header>
+    <nav>
+      <h1 class="logo">FitPulse</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Exercise.html">Exercise</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section class="entry-section">
+  <h2 style="color: black; font-weight: bolder; background-color: aquamarine; display: inline-block; width: 600px;padding: 5px; border-radius: 4px;">Workout Schedule Entry</h2>
+  <form id="entryForm" onsubmit="return addEntry(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="exercise" placeholder="Exercise Type (e.g. Yoga, Cardio)" required>
+    <input type="time" id="time" required>
+    <button type="submit">Add Schedule</button>
+  </form>
+
+  <div class="entry-list" id="entryList">
+    <h3>Scheduled Workouts:</h3>
+    <ul style="color: black; margin-top: 10px;" id="outputList"></ul>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
